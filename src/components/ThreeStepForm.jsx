@@ -5,14 +5,14 @@ class ThreeStepForm extends Component {
     return (
       <div>
         <div className="tabs three">
-          <input id="tabC-1" type="radio" name="tabgroupC" aria-hidden="true" />
-          <label for="tabC-1" className="pseudo button toggle">1</label>
+          <input id="tabC-1" type="radio" name="tabgroupC" defaultChecked aria-hidden="true" />
+          <label htmlFor="tabC-1" className="pseudo button toggle">1</label>
           <span> / </span>
-          <input id="tabC-2" type="radio" name="tabgroupC" checked aria-hidden="true" />
-          <label for="tabC-2" className="pseudo button toggle">2</label>
+          <input id="tabC-2" type="radio" name="tabgroupC" aria-hidden="true" />
+          <label htmlFor="tabC-2" className="pseudo button toggle">2</label>
           <span> / </span>
           <input id="tabC-3" type="radio" name="tabgroupC" aria-hidden="true" />
-          <label for="tabC-3" className="pseudo button toggle">3</label>
+          <label htmlFor="tabC-3" className="pseudo button toggle">3</label>
           <div className="row">
             <article className="card">
               <header>
@@ -20,7 +20,7 @@ class ThreeStepForm extends Component {
               </header>
               <section>
                 Obviously agree with the
-                <a href="#">
+                <a href="google.com">
                   <strong data-tooltip="Clicking me is futile">terms and conditions</strong>
                 </a>
               </section>
@@ -31,7 +31,7 @@ class ThreeStepForm extends Component {
                 </label>
               </section>
               <footer>
-                <label for="tabC-2" className="button">Agree</label>
+                <label htmlFor="tabC-2" className="button">Agree</label>
               </footer>
             </article>
             <div className="card">
@@ -58,8 +58,8 @@ class ThreeStepForm extends Component {
                 </label>
               </section>
               <footer>
-                <label for="tabC-3" className="button">Next</label>
-                <label for="tabC-1" className="button dangerous">Back</label>
+                <label htmlFor="tabC-3" className="button">Next</label>
+                <label htmlFor="tabC-1" className="button dangerous">Back</label>
               </footer>
             </div>
             <div className="card">
@@ -74,7 +74,7 @@ class ThreeStepForm extends Component {
               </section>
               <footer>
                 <button className="success">Finish!</button>
-                <label for="tabC-2" className="button dangerous">Back</label>
+                <label htmlFor="tabC-2" className="button dangerous">Back</label>
               </footer>
             </div>
           </div>

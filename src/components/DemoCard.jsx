@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class DemoCard extends Component {
   render() {
     return (
-      <div class="card">
+      <div className="card">
         <section>
           <button>Normal</button>
           <button className="success">Success</button>
@@ -16,7 +16,7 @@ class DemoCard extends Component {
         <section>
           <div className="flex three gallery">
             <div>
-              <article data-tooltip="Click me to upload a new image" class="tooltip-bottom">
+              <article data-tooltip="Click me to upload a new image" className="tooltip-bottom">
                 <label className="dropimage">
                   <input type="file" />
                 </label>
