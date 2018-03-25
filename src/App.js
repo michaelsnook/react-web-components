@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import DemoCard from './components/DemoCard';
 import ThreeStepForm from './components/ThreeStepForm';
 import TinyForm from './components/TinyForm';
+import TinyDonateForm from './components/TinyDonateForm';
 import Gallery from './components/Gallery';
 
 import logo from './logo.svg';
@@ -25,9 +26,9 @@ class App extends Component {
           <ThreeStepForm />
         </div>
         <div className="flex three-800">
-          <TinyForm />
-          <TinyForm />
-          <TinyForm />
+          <TinyForm title="Get my newsletter" submit="Get it" />
+          <TinyDonateForm />
+          <TinyDonateForm monthly title="Monthly $$s" />
         </div>
         <div className="flex">
           <Gallery />
